@@ -1,0 +1,637 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    background: #000;
+    /* background: linear-gradient(to bottom right,#000 65% ,rgba(167, 13, 214, 0.781)); */
+    font-family: Segoe UI, "Microsoft Yahei" !important;
+}
+
+/* html a {
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+} */
+
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #ccc
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+img {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+h2 {
+    text-align: left;
+    font-size: 16px
+}
+
+q:before,
+q:after {
+    content: ‘‘
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+input,
+textarea,
+select {
+    *font-size: 100%;
+    outline: none
+}
+
+legend {
+    color: #000
+}
+
+a,
+a:link {
+    text-decoration: none;
+    cursor: pointer
+}
+
+a:hover {
+    text-decoration: none
+}
+
+a:focus {
+    outline: none;
+    -moz-outline: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+*+html .clearfix {
+    min-height: 1%
+}
+
+ul {
+    list-style-type: none
+}
+
+
+/* ul li {
+    float: left
+} */
+
+li {
+    list-style: none
+}
+
+.readonly_font_color {
+    color: #a5a5a5
+}
+
+input {
+    outline: none
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #aaa;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-appearance: none;
+    outline: none
+}
+
+
+/*==公用样式 整理 2014-09-02===============================*/
+
+
+/*-----字体大小样式-----*/
+
+.font12 {
+    font-size: 12px
+}
+
+.font14 {
+    font-size: 14px
+}
+
+.font16 {
+    font-size: 16px
+}
+
+.font18 {
+    font-size: 18px
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.font42 {
+    font-size: 42px;
+}
+
+.font20 {
+    font-size: 20px
+}
+
+
+/*-----字体行高样式-----*/
+
+.line25 {
+    line-height: 25px;
+}
+
+.line30 {
+    line-height: 30px;
+}
+
+
+/*-----float 样式-----*/
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*-----margin 样式-----*/
+
+.ml-03 {
+    margin-left: -3px
+}
+
+.ml-04 {
+    margin-left: -4px
+}
+
+.ml-06 {
+    margin-left: -6px
+}
+
+.ml03 {
+    margin-left: 3px
+}
+
+.ml05 {
+    margin-left: 5px
+}
+
+.ml06 {
+    margin-left: 6px
+}
+
+.ml10 {
+    margin-left: 10px
+}
+
+.ml12 {
+    margin-left: 12px
+}
+
+.ml16 {
+    margin-left: 16px
+}
+
+.ml20 {
+    margin-left: 20px
+}
+
+.ml24 {
+    margin-left: 24px
+}
+
+.ml25 {
+    margin-left: 25px
+}
+
+.ml30 {
+    margin-left: 30px
+}
+
+.ml45 {
+    margin-left: 45px
+}
+
+.ml60 {
+    margin-left: 60px
+}
+
+.ml80 {
+    margin-left: 80px
+}
+
+.ml100 {
+    margin-left: 100px
+}
+
+.ml110 {
+    margin-left: 110px;
+}
+
+.ml150 {
+    margin-left: 150px
+}
+
+.ml160 {
+    margin-left: 160px
+}
+
+.ml200 {
+    margin-left: 200px
+}
+
+.mr03 {
+    margin-right: 3px
+}
+
+.mr06 {
+    margin-right: 6px
+}
+
+.mr07 {
+    margin-right: 7px
+}
+
+.mr08 {
+    margin-right: 8px
+}
+
+.mr09 {
+    margin-right: 9px
+}
+
+.mr10 {
+    margin-right: 10px
+}
+
+.mr12 {
+    margin-right: 12px
+}
+
+.mr20 {
+    margin-right: 20px
+}
+
+.mr40 {
+    margin-right: 40px
+}
+
+.mt03 {
+    margin-top: 3px
+}
+
+.mt06 {
+    margin-top: 6px
+}
+
+.mt08 {
+    margin-top: 8px
+}
+
+.mt10 {
+    margin-top: 10px
+}
+
+.mt12 {
+    margin-top: 12px
+}
+
+.mt14 {
+    margin-top: 14px
+}
+
+.mt15 {
+    margin-top: 15px
+}
+
+.mt18 {
+    margin-top: 18px
+}
+
+.mt30 {
+    margin-top: 30px
+}
+
+.mt36 {
+    margin-top: 36px
+}
+
+.mt38 {
+    margin-top: 38px
+}
+
+.mt45 {
+    margin-top: 41px
+}
+
+.mt480 {
+    margin-top: 320px
+}
+
+.mt-5 {
+    margin-top: -5px;
+}
+
+.mt-25 {
+    margin-top: -25px;
+}
+
+.mt-30 {
+    margin-top: -30px
+}
+
+.mb12 {
+    margin-bottom: 12px
+}
+
+.mb20 {
+    margin-bottom: 20px
+}
+
+.mb50 {
+    margin-bottom: 50px
+}
+
+.mb200 {
+    margin-bottom: 200px
+}
+
+.pr40 {
+    padding-right: 40px
+}
+
+.pr50 {
+    padding-right: 50px
+}
+
+.pr60 {
+    padding-right: 60px
+}
+
+.pr70 {
+    padding-right: 70px
+}
+
+.pr80 {
+    padding-right: 80px
+}
+
+.pr90 {
+    padding-right: 90px
+}
+
+.pr95 {
+    padding-right: 95px
+}
+
+.pr100 {
+    padding-right: 100px
+}
+
+.pd20 {
+    padding: 20px
+}
+
+
+/*-----宽度 样式-----*/
+
+.wth980 {
+    width: 980px;
+    display: block;
+    margin: 0 auto
+}
+
+.wth40 {
+    width: 40px
+}
+
+.wth50 {
+    width: 50px
+}
+
+.wth60 {
+    width: 60px
+}
+
+.wth70 {
+    width: 70px
+}
+
+.wth75 {
+    width: 75px
+}
+
+.wth80 {
+    width: 80px
+}
+
+.wth90 {
+    width: 90px
+}
+
+.wth100 {
+    width: 100px
+}
+
+.wth107 {
+    width: 107px
+}
+
+.wth140 {
+    width: 140px
+}
+
+.wth160 {
+    width: 160px
+}
+
+.wth198 {
+    width: 198px
+}
+
+.wth200 {
+    width: 200px
+}
+
+.wth230 {
+    width: 230px
+}
+
+.wth250 {
+    width: 250px
+}
+
+.wth305 {
+    width: 305px;
+}
+
+.wth310 {
+    width: 300px
+}
+
+.wth480 {
+    width: 480px
+}
+
+.wth400 {
+    width: 400px
+}
+
+.wth469 {
+    width: 469px
+}
+
+.wth550 {
+    width: 550px
+}
+
+
+/*高度样式*/
+
+.height15 {
+    height: 15px;
+}
+
+.lheight40 {
+    line-height: 40px;
+}
+
+
+/*-----color-----*/
+
+.colorfff {
+    color: #fff
+}
+
+.colordd {
+    color: #ddd
+}
+
+.colord8 {
+    color: #d8d8d8
+}
+
+.color43 {
+    color: #434343
+}
+
+.color58 {
+    color: #585858
+}
+
+.color59 {
+    color: #595959
+}
+
+.color555 {
+    color: #555
+}
+
+.color666 {
+    color: #666
+}
